@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>問題1</title>
+</head>
+
+<style>
+	body{
+		width:1200px;
+		background-color: antiquewhite
+	}
+	.choco{
+		width:400px;
+		float:left;
+		text-align: center;
+	}
+	.watch{
+		width:400px;
+		float:left;
+		text-align: center;
+	}
+	.urlhari{
+		padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 2px #FAEBD7;
+		background-color: #3169d1;
+    color: #fff !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+	}
+	.urlhari h3{
+		margin: 0; 
+    padding: 0;
+	}
+	.urlhari:hover{
+		background-color: #998bfa;
+	}
+	.cinema{
+		width:400px;
+		float:left;
+		text-align:center;
+	}
+	</style>
+
+<body>
+	<div>
+		<h3>
+			昨年、是枝裕和監督がカンヌ国際映画祭で日本人監督としては21年ぶりに受賞した最高賞の名前はなんでしょうか。
+		</h3>
+		
+		
+		  <p></p>
+		  <div>
+	  <div class="watch" >
+		  <ul class="urlhari" onclick="machigai()"><h3>金獅子賞</h3></ul>
+		<br><img src="picture/kinnjisi.jpg" width="400"alt=""/></a>		</div>
+		
+	  <div class="choco">
+	  <ul class="urlhari" onclick="seikai()"><h3>パルムドール賞</h3></ul>
+	  <br><img src= "picture/parumu.jpg" width="400" height="376" alt=""/></a></div>
+	  
+	  <div class="cinema">
+	  <ul class="urlhari" onclick="machigai()"><h3>作品賞</h3></ul>
+		<br><img src="picture/osuka-.jpg" width="400" height="376
+		" alt=""></a></div>
+		
+	</div></div>
+		<script>
+			var hit=Number(localStorage.hit);
+			
+			function seikai(){
+				hit = hit+1;
+				localStorage.hit = hit; 
+				location.href = "kekka.html";
+			}
+			function machigai(){
+				localStorage.hit = hit;
+				location.href = "kekka.html";
+			}
+	
+	</script>
+
+</body>
+</html>
