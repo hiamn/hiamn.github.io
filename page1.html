@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>問題1</title>
+</head>
+
+<style>
+	.a{
+		border-style: none
+	}
+	body{
+		width:1200px;
+		background-color: antiquewhite
+	}
+	.choco{
+		width:400px;
+		float:left;
+		text-align: center;
+		
+	}
+	
+	.watch{
+		width:400px;
+		float:left;
+		text-align: center;
+	}
+	.urlhari{
+		padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 2px #FAEBD7;
+		background-color: #3169d1;
+    color: #fff !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+	}
+	.urlhari h3{
+		margin: 0; 
+    padding: 0;
+	}
+	.urlhari:hover{
+		background-color: #998bfa;
+	}
+	.cinema{
+		width:400px;
+		float:left;
+		text-align:center;
+	}
+	</style>
+
+<body>
+	<div>
+		<h3>
+			トム・ハンクス主演の「フォレスト・ガンプ/一期一会」に出てくる主人公がお母さんに言われた「人生は◯◯のようなもの。」
+			<br>空欄に入る言葉はなんでしょうか。
+		</h3>
+		
+		
+		  <p></p>
+		  <div>
+	  <div class="watch" >
+		  <ul class="urlhari" onclick="machigai()"><h3>時計の針</h3></ul>
+		<br><img src="picture/b1bc9826e5f987d7a38a46cfeef23847.jpg" width="400" height="400" alt=""/></a>		</div>
+		
+	  <div class="choco">
+		  <ul class="urlhari"onclick="seikai()"><h3>チョコレートの箱</h3></ul>
+	  <br><img src="picture/DSC05713hutu.jpg" width="400" height="400" alt=""/></a></div>
+	  
+	  <div class="cinema">
+		  <ul class="urlhari"onclick="machigai()"><h3>映画</h3></ul>
+		<br><img src="picture/96fae_759_4ebecdef_017f2db8.jpg" width="400" height="400
+		" alt=""></a></div>
+		
+	</div></div>
+		<script>
+			var hit=0;
+			
+			function seikai(){
+				hit = hit+1;
+				localStorage.hit = hit; 
+				location.href = "page2.html";
+			}
+			function machigai(){
+				localStorage.hit = hit;
+				location.href = "page2.html";
+			}
+	
+	</script>
+
+</body>
+</html>
